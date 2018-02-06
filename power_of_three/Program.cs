@@ -16,4 +16,18 @@ namespace power_of_three
             Console.ReadLine(); // power to raise each value
         }
     }
+
+    public class GeneratePowers
+    {
+        public void RaiseToPower(int maxIterations, int power)
+        {
+            Console.WriteLine("{0,8}{1,16}",
+                "Number", "Power of " + power);
+            for (int i = 1; i <= maxIterations; ++i)
+            {
+                Console.Write("{0,5}{1,15}\n", i,
+                   Math.Pow(i, power));
+            }
+        }
+    }
 }
